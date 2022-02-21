@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Price List</title>
+    <link rel="icon" href="images/Underground_Gym_Logo.ico">
+
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/priceStyle.css">
+
+    <script src="JS/price.js" charset="utf-8"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section id="title">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/Underground Gym.png" alt="Underground Gym">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a id="price" class="nav-link" href="price.html" onmouseover="onmouseoverNavPrice()" onmouseout="onmouseoutNavPrice()">Price</a>
+              </li>
+              <li class="nav-item">
+                <a id="about" class="nav-link" href="about.html" onmouseover="onmouseoverNavAbout()" onmouseout="onmouseoutNavAbout()">About</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </section>
+
+    <div>
+      <hr noshade size="3" color="black">
+      <h1>Price list</h1>
+      <hr noshade size="3" color="black">
+      <h2>Adress: Мустафина, 3</h2>
+      <div class="container">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Day Pass<br>10:00-17:00</th>
+              <th>Universal Pass<br>10:00-22:00</th>
+            </tr>
+          </thead>
+          <tbody class="table-dark">
+            <tr>
+              <td>One-time<br>visit</td>
+              <td colspan="2">2 000</td>
+            </tr>
+            <tr>
+              <td>Month</td>
+              <td>8 000</td>
+              <td>11 000</td>
+            </tr>
+            <tr>
+              <td>Split<br>(2 persons)</td>
+              <td>15 000</td>
+              <td>19 000</td>
+            </tr>
+            <tr>
+              <td>Student,<br>Retired,<br>Disabled</td>
+              <td>7 000</td>
+              <td>9 000</td>
+            </tr>
+            <tr>
+              <td>Premium</td>
+              <td colspan="2">16 500</td>
+            </tr>
+            <tr>
+              <td>Training<br>program+Nutrition</td>
+              <td colspan="2">8 000</td>
+            </tr>
+            <tr>
+              <td>3 Months</td>
+              <td>20 500</td>
+              <td>28 000</td>
+            </tr>
+            <tr>
+              <td>Split<br>(2 persons)</td>
+              <td>18 500</td>
+              <td>25 200</td>
+            </tr>
+            <tr>
+              <td>6 Months</td>
+              <td>36 000</td>
+              <td>49 500</td>
+            </tr>
+            <tr>
+              <td>Split<br>(2 persons)</td>
+              <td>44 500</td>
+              <td>59 900</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Classes with a personal trainer</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>One-time</th>
+              <th>8 Training Sessions</th>
+              <th>12 Training Sessions</th>
+              <th>36 Training Sessions</th>
+            </tr>
+          </thead>
+          <tbody class="table-dark">
+            <tr>
+              <th>4 500</th>
+              <th>24 000</th>
+              <th>32 000</th>
+              <th>75 000</th>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Split workouts</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>One-time</th>
+              <th>8 Training Sessions</th>
+              <th>12 Training Sessions</th>
+              <th>36 Training Sessions</th>
+            </tr>
+          </thead>
+          <tbody class="table-dark">
+            <tr>
+              <th>8 000</th>
+              <th>42 000</th>
+              <th>58 000</th>
+              <th>140 000</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

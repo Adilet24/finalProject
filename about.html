@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About us</title>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/aboutStyle.css">
+    <link rel="icon" href="images/Underground_Gym_Logo.ico">
+    <script src="JS/about.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <section id="title">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/Underground Gym.png" alt="Underground Gym">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a id="price" class="nav-link" href="price.html" onmouseover="onmouseoverNavPrice()" onmouseout="onmouseoutNavPrice()">Price</a>
+            </li>
+            <li class="nav-item">
+              <a id="about" class="nav-link" href="about.html" onmouseover="onmouseoverNavAbout()" onmouseout="onmouseoutNavAbout()">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <div>
+      <hr noshade size="3" color="black">
+      <strong>About us:</strong>
+      <hr noshade size="3" color="black">
+      <h3>Fitness club<br><em>"Underground Gym"</em> - a network of 5 fitness clubs in Astana</h3>
+      <a href="https://instagram.com/underground_gym_ast?utm_medium=copy_link">
+        <img src="images/instagram_logo.png" width="38px" height="38px" alt="Instagram">
+      </a>
+      <h2>Our branches are located on:</h2>
+      <ol>
+        <li class="list">Uly Dala,&nbsp19</li>
+        <li class="list">Seifullina,&nbsp1</li>
+        <li class="list">Satpaeva,&nbsp22</li>
+        <li class="list">Tarhana,&nbsp17</li>
+        <li class="list">Mustafina,&nbsp3</li>
+      </ol>
+    </div>
+
+    <div id="complaint">
+      <h2>If you want to send an anonymous complaint, write it in this field</h2>
+      <input type="text" id="complaintIn">
+      <p id="hint"></p>
+      <p id="hint2"></p>
+
+      <script>
+      document.getElementById("complaintIn").onkeypress = function() {myFunction()};
+
+      function myFunction() {
+        document.getElementById("hint").innerHTML = "Do not forget to write to whom exactly the complaint is directed.";
+        document.getElementById("hint2").innerHTML = "Don't be afraid to write because the customer is always right";
+      }
+      </script>
+    </div>
+  </body>
+</html>
