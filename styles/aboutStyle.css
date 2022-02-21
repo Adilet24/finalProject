@@ -1,0 +1,11 @@
+body {
+  background-color: #888;
+}
+
+li.list {
+  clear:left;
+}
+
+li.nav-item {
+  font-size: 25px;
+}
